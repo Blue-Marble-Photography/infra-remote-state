@@ -1,4 +1,6 @@
 terraform {
+  required_version = "~> 1.11"
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -13,6 +15,4 @@ terraform {
     region       = "us-east-1"
     use_lockfile = true
   }
-
-  required_version = "~> 1.11"
 }
